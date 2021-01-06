@@ -1,0 +1,31 @@
+body {
+	background-color: rgb(40, 41, 35);
+}
+
+.estrelas {
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	border-radius: 100px;
+}
+
+#sol {
+	margin: 90px 0 0 570px;
+	background-color: rgb(247, 247, 1);
+	box-shadow: 0 0 100px rgb(254, 254, 84);
+	animation-name: eclipse;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+#lua {
+	background-color: rgb(40, 41, 40);
+	margin: 100px 0 0 600px;
+}
+
+@keyframes eclipse {
+	0% { margin: 90px 0 0 570px; }
+	29% { box-shadow: 0 0 30px rgb(247, 247, 1), 0 0 60px rgb(211, 110, 31); }
+	100% { margin: 110px 0 0 630px; }
+}
